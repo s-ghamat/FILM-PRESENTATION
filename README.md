@@ -1,61 +1,73 @@
-# 🎬 projet\_progWeb\_GHAMAT – Site de Présentation de Films
+# 🎬 projet_progWeb – Plateforme de Présentation de Films
 
-**Note importante**
-Veuillez utiliser les identifiants suivants pour accéder à la page de connexion et ajouter vos contenus favoris sur le site :
+## 🔐 Informations d’accès (environnement de démonstration)
+
+Pour accéder à l’interface d’administration et gérer les contenus du site, veuillez utiliser les identifiants suivants :
 
 * **Adresse e-mail** : `admin@gmail.com`
 * **Mot de passe** : `AsdfZxcv`
 
+---
 
-## 📝 À propos du projet
+## 📝 Présentation du projet
 
-Ce site web a été développé dans le cadre du projet **PROGRAMMATION\_WEB2\_FILM\_PRESENTATION** à l’aide de l’IDE **Visual Studio Code (VS Code)**. Il propose une plateforme bilingue (français et anglais) pour présenter des films à travers une interface simple et interactive.
+Ce projet web a été réalisé dans le cadre du module **PROGRAMMATION_WEB2_FILM_PRESENTATION**, en utilisant l’IDE **Visual Studio Code (VS Code)**.
+Il s’agit d’une plateforme web bilingue (français / anglais) dédiée à la présentation de films, conçue pour offrir une navigation claire, intuitive et interactive.
 
+---
 
 ## 🌐 Fonctionnalités principales
 
-Le site est structuré autour de plusieurs sections :
+Le site est organisé autour de plusieurs sections fonctionnelles :
 
-### 1. **Page d’accueil**
+### **Page d’accueil**
 
-* Affiche une sélection de films.
-* Présente les **titres** et une **brève description** de chaque film.
+* Présente une sélection de films disponibles sur la plateforme.
+* Affiche pour chaque film son **titre** ainsi qu’une **description concise**.
 
-### 2. **Page de détails**
+### **Page de détails**
 
-* Affiche des informations complémentaires sur chaque film :
+* Fournit des informations détaillées sur chaque film, notamment :
 
-  * **Année de production**
-  * **Réalisateur**
-  * **Langue du film**
+  * Année de production
+  * Réalisateur
+  * Langue du film
 
-### 3. **Page "À propos"**
+### **Page “À propos”**
 
-* Contient une brève présentation du propriétaire du site.
+* Contient une présentation succincte du propriétaire ou de l’auteur du site.
 
-### 4. **Section Administrateur**
+### **Interface Administrateur**
 
-* Interface dédiée à la gestion des contenus dynamiques du site.
-* Permet d’ajouter, modifier ou supprimer des films via une interface sécurisée.
+* Espace sécurisé réservé à la gestion des contenus.
+* Permet l’ajout, la modification et la suppression de films via une interface dédiée.
 
+---
 
 ## 🛠️ Spécifications techniques
 
 * **Base de données** : SQLite
-* **Backend** : PHP, avec appels **AJAX** pour charger dynamiquement les données.
-* **Interface utilisateur (IHM)** :
+* **Backend** : PHP
 
-  * Développée en PHP.
-  * Design **responsive**, compatible avec tous types d’écrans (desktop, tablette, mobile).
+  * Utilisation de requêtes **AJAX** pour le chargement dynamique des données
+* **Interface utilisateur** :
+
+  * Développée en PHP
+  * Design **responsive**, compatible avec ordinateurs, tablettes et smartphones
 * **Sécurité** :
 
-  * Tous les champs de saisie sont vérifiés pour éviter les **caractères spéciaux**.
-  * Protection contre les **injections SQL** lors de la saisie des données par l’administrateur.
+  * Validation des champs de saisie afin d’empêcher l’injection de caractères non autorisés
+  * Protection contre les **injections SQL** lors des opérations administrateur
 
+---
 
-## 📦 Déploiement & Utilisation
+## 📦 Déploiement et utilisation
 
-1. Cloner le projet dans un serveur local (ex : XAMPP, WAMP).
-2. Assurez-vous que la base de données SQLite est accessible.
-3. Lancez le site via un navigateur en accédant à `index.php`.
-4. Connectez-vous en tant qu’administrateur pour gérer le contenu.
+1. Cloner le projet sur un serveur local (ex. : XAMPP, WAMP).
+2. Vérifier l’accessibilité de la base de données SQLite.
+3. Lancer le site via un navigateur en accédant au fichier `index.php`.
+4. Se connecter en tant qu’administrateur pour gérer les films et les contenus dynamiques.
+
+---
+
+Ce projet met en avant une approche structurée du développement web, combinant bonnes pratiques de sécurité, architecture claire et expérience utilisateur soignée.
