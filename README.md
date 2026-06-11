@@ -1,73 +1,112 @@
-# 🎬 projet_progWeb – Plateforme de Présentation de Films
+# Movie Presentation Platform
 
-## 🔐 Informations d’accès (environnement de démonstration)
+Bilingual web platform for presenting and managing a movie catalog.
 
-Pour accéder à l’interface d’administration et gérer les contenus du site, veuillez utiliser les identifiants suivants :
+The project provides a simple public interface for browsing movies and a secured administration area for managing dynamic content.
 
-* **Adresse e-mail** : `admin@gmail.com`
-* **Mot de passe** : `AsdfZxcv`
+## Overview
 
----
+This project was developed for the `PROGRAMMATION_WEB2_FILM_PRESENTATION` module.
 
-## 📝 Présentation du projet
+The application is built with PHP and SQLite. It supports French and English content, dynamic data loading with AJAX, and a responsive interface for desktop, tablet, and mobile devices.
 
-Ce projet web a été réalisé dans le cadre du module **PROGRAMMATION_WEB2_FILM_PRESENTATION**, en utilisant l’IDE **Visual Studio Code (VS Code)**.
-Il s’agit d’une plateforme web bilingue (français / anglais) dédiée à la présentation de films, conçue pour offrir une navigation claire, intuitive et interactive.
+## Features
 
----
+* Bilingual interface: French and English
+* Movie listing page
+* Movie detail page
+* About page
+* Secured administration area
+* Add, edit, and delete movies
+* Dynamic data loading with AJAX
+* Responsive layout
+* Input validation
+* SQL injection protection
 
-## 🌐 Fonctionnalités principales
+## Pages
 
-Le site est organisé autour de plusieurs sections fonctionnelles :
+| Page          | Purpose                                                               |
+| ------------- | --------------------------------------------------------------------- |
+| Home          | Displays the available movies with title and short description        |
+| Movie Details | Shows production year, director, language, and full movie information |
+| About         | Presents the owner or author of the website                           |
+| Admin         | Allows authenticated content management                               |
 
-### **Page d’accueil**
+## Technical Stack
 
-* Présente une sélection de films disponibles sur la plateforme.
-* Affiche pour chaque film son **titre** ainsi qu’une **description concise**.
+| Layer                   | Technology                 |
+| ----------------------- | -------------------------- |
+| Backend                 | PHP                        |
+| Database                | SQLite                     |
+| Dynamic requests        | AJAX                       |
+| Frontend                | PHP, HTML, CSS, JavaScript |
+| Development environment | Visual Studio Code         |
 
-### **Page de détails**
+## Security
 
-* Fournit des informations détaillées sur chaque film, notamment :
+The project includes basic security measures for the administration interface:
 
-  * Année de production
-  * Réalisateur
-  * Langue du film
+* Form input validation
+* Filtering of unauthorized characters
+* Protection against SQL injection during admin operations
+* Restricted access to content management features
 
-### **Page “À propos”**
+## Demo Access
 
-* Contient une présentation succincte du propriétaire ou de l’auteur du site.
+For demonstration environments, use dedicated demo credentials only.
 
-### **Interface Administrateur**
+```text
+Email: demo-admin@example.com
+Password: demo-password
+```
 
-* Espace sécurisé réservé à la gestion des contenus.
-* Permet l’ajout, la modification et la suppression de films via une interface dédiée.
+Do not publish real administrator credentials in a public repository.
 
----
+## Installation
 
-## 🛠️ Spécifications techniques
+Clone the project into a local web server environment such as XAMPP or WAMP.
 
-* **Base de données** : SQLite
-* **Backend** : PHP
+```bash
+git clone <repository-url>
+```
 
-  * Utilisation de requêtes **AJAX** pour le chargement dynamique des données
-* **Interface utilisateur** :
+Place the project inside the local server directory, for example:
 
-  * Développée en PHP
-  * Design **responsive**, compatible avec ordinateurs, tablettes et smartphones
-* **Sécurité** :
+```text
+htdocs/
+```
 
-  * Validation des champs de saisie afin d’empêcher l’injection de caractères non autorisés
-  * Protection contre les **injections SQL** lors des opérations administrateur
+Check that the SQLite database is accessible by the application.
 
----
+## Usage
 
-## 📦 Déploiement et utilisation
+Start the local server and open the application in a browser:
 
-1. Cloner le projet sur un serveur local (ex. : XAMPP, WAMP).
-2. Vérifier l’accessibilité de la base de données SQLite.
-3. Lancer le site via un navigateur en accédant au fichier `index.php`.
-4. Se connecter en tant qu’administrateur pour gérer les films et les contenus dynamiques.
+```text
+http://localhost/projet_progWeb/index.php
+```
 
----
+Log in to the administration area to manage movies and dynamic content.
 
-Ce projet met en avant une approche structurée du développement web, combinant bonnes pratiques de sécurité, architecture claire et expérience utilisateur soignée.
+## Project Structure
+
+```text
+projet_progWeb/
+├── index.php
+├── admin/
+├── assets/
+├── includes/
+├── database/
+├── pages/
+└── README.md
+```
+
+## Academic Context
+
+Module: `PROGRAMMATION_WEB2_FILM_PRESENTATION`
+Project type: Web programming project
+Development environment: Visual Studio Code
+
+## Author
+
+Setayesh Ghamat
